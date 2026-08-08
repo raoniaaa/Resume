@@ -20,7 +20,7 @@ filters.forEach((button) => button.addEventListener('click', () => {
   emptyState.hidden = visible > 0;
 }));
 
-document.querySelectorAll('.project-trigger').forEach((button) => {
+document.querySelectorAll('button.project-trigger').forEach((button) => {
   const panel = document.getElementById(button.getAttribute('aria-controls'));
   button.addEventListener('click', () => {
     const expanded = button.getAttribute('aria-expanded') === 'true';

@@ -70,9 +70,9 @@
         </div>
         <div class="project-list" data-project-list>
           <article class="project project-primary reveal" data-tags="agent go saas">
-            <button class="project-trigger" aria-expanded="false" aria-controls="project-metageo">
+            <a class="project-trigger" href="%BASE_URL%projects/metageo/">
               <span class="project-index">01</span><span class="project-title"><strong>metaGEO</strong><small>多租户 GEO 智能监测平台</small></span><span class="project-tech">GO · MCP · SAAS</span><span class="project-date">核心开发<br />2026/07 — 至今</span><span class="project-arrow">↗</span>
-            </button>
+            </a>
             <div class="project-panel" id="project-metageo">
               <div class="case-intro"><p>面向品牌 GEO 运营与 Agency 白标交付，建设从舆情数据采集、内容分析到多模型品牌可见度监控和报告生成的全流程平台。</p><div class="case-tags"><span>Go 1.26</span><span>Gin</span><span>MCP</span><span>PostgreSQL</span><span>Docker</span><span>BFF</span></div></div>
               <div class="case-grid"><article><b>01</b><h4>GEO Agent 工作流</h4><p>以 Go/Gin 编排 MCP 搜索与详情抓取、评论清洗、分析、QRW、探针生成、多模型监控和 HTML 报告，通过统一状态机与前置校验约束执行顺序。</p></article><article><b>02</b><h4>多模型监控</h4><p>并发调用豆包、DeepSeek、通义千问、Kimi 等模型，持久化问题、回复、引用来源、调用模式与耗时，汇总可见度、提及率、情感与竞品分析。</p></article><article><b>03</b><h4>多租户 SaaS</h4><p>实现平台运营、Agency 管理员、员工三层入口与独立会话；基于 Tenant 上下文隔离品牌、报告、用量和钱包，支持限流、IP 白名单、Webhook 与计费。</p></article><article><b>04</b><h4>稳定性工程</h4><p>通过 BFF 隐藏平台密钥并代理业务 API；为监控工作流增加 Checkpoint、状态恢复、热点步骤缓存和进度轮询，降低重复计算与服务压力。</p></article></div>
@@ -80,9 +80,9 @@
           </article>
 
           <article class="project project-primary reveal" data-tags="agent rag">
-            <button class="project-trigger" aria-expanded="false" aria-controls="project-websearch">
+            <a class="project-trigger" href="%BASE_URL%projects/websearch/">
               <span class="project-index">02</span><span class="project-title"><strong>WebSearch</strong><small>跨信源拟合 RAG Agent</small></span><span class="project-tech">PYTHON · LANGGRAPH · RAG</span><span class="project-date">Agent 开发<br />2026/07 — 至今</span><span class="project-arrow">↗</span>
-            </button>
+            </a>
             <div class="project-panel websearch-panel" id="project-websearch">
               <div class="case-intro"><p>针对开放 API 与真实 C 端 App 的信源偏差，模拟用户搜索行为并建立动态评估闭环，量化品牌在生成式搜索中的曝光、提及与信源一致性。</p><div class="case-tags"><span>DeepSeek</span><span>LangGraph</span><span>LLM-as-a-Judge</span><span>Reflexion</span><span>Ground Truth</span></div></div>
               <section class="architecture" aria-labelledby="architecture-title">
@@ -111,9 +111,9 @@
             </div>
           </article>
 
-          <article class="project reveal" data-tags="agent rag java"><button class="project-trigger" aria-expanded="false" aria-controls="project-stock"><span class="project-index">03</span><span class="project-title"><strong>StockGenie</strong><small>多 Agent 股票分析平台</small></span><span class="project-tech">JAVA · WEBFLUX · PGVECTOR</span><span class="project-date">Agent 开发<br />2026/03 — 至今</span><span class="project-arrow">↗</span></button><div class="project-panel" id="project-stock"><div class="case-grid"><article><b>01</b><h4>四角色多 Agent 共识</h4><p>投研员负责客观数据，多空分析师并行论证，投研总监汇总并输出结构化决策摘要。</p></article><article><b>02</b><h4>可靠性防护</h4><p>XML 工具协议、Tool-First 约束、数据幻觉审计与流式过滤，避免无数据推理和前端渲染破裂。</p></article></div></div></article>
-          <article class="project reveal" data-tags="agent rag java saas"><button class="project-trigger" aria-expanded="false" aria-controls="project-medicore"><span class="project-index">04</span><span class="project-title"><strong>MediCore·智枢</strong><small>医疗 Agent 融合平台</small></span><span class="project-tech">SPRING AI · FLOWABLE · REDIS</span><span class="project-date">核心后端开发<br />2025/01 — 至今</span><span class="project-arrow">↗</span></button><div class="project-panel" id="project-medicore"><div class="case-grid"><article><b>01</b><h4>高可信医疗 RAG</h4><p>按证型、方剂、禁忌分块，结合向量检索、BM25、RRF、Rerank 和元数据过滤。</p></article><article><b>02</b><h4>业务工具与合规</h4><p>将医保结算、医嘱和药品库存等 8 个 REST API 封装为标准工具，并对 PHI 信息脱敏。</p></article></div></div></article>
-          <article class="project reveal" data-tags="java saas"><button class="project-trigger" aria-expanded="false" aria-controls="project-erp"><span class="project-index">05</span><span class="project-title"><strong>Enterprise ERP</strong><small>供应链与流程平台</small></span><span class="project-tech">SPRING BOOT · FLOWABLE · MYSQL</span><span class="project-date">全栈开发<br />2025/04 — 2025/12</span><span class="project-arrow">↗</span></button><div class="project-panel" id="project-erp"><div class="case-grid"><article><b>01</b><h4>一致性与隔离</h4><p>条件 UPDATE 实现库存原子扣减；MyBatis Plus 自动注入 tenant_id 并传递异步租户上下文。</p></article><article><b>02</b><h4>流程与集成</h4><p>Flowable 状态双向同步，支持驳回重提与幂等；接入多 Corp 企业微信 OAuth2 和通讯录回调。</p></article></div></div></article>
+          <article class="project reveal" data-tags="agent rag java"><a class="project-trigger" href="%BASE_URL%projects/stockgenie/"><span class="project-index">03</span><span class="project-title"><strong>StockGenie</strong><small>多 Agent 股票分析平台</small></span><span class="project-tech">JAVA · WEBFLUX · PGVECTOR</span><span class="project-date">Agent 开发<br />2026/03 — 至今</span><span class="project-arrow">↗</span></a></article>
+          <article class="project reveal" data-tags="agent rag java saas"><a class="project-trigger" href="%BASE_URL%projects/medicore/"><span class="project-index">04</span><span class="project-title"><strong>MediCore·智枢</strong><small>医疗 Agent 融合平台</small></span><span class="project-tech">SPRING AI · FLOWABLE · REDIS</span><span class="project-date">核心后端开发<br />2025/01 — 至今</span><span class="project-arrow">↗</span></a></article>
+          <article class="project reveal" data-tags="java saas"><a class="project-trigger" href="%BASE_URL%projects/erp/"><span class="project-index">05</span><span class="project-title"><strong>Enterprise ERP</strong><small>供应链与流程平台</small></span><span class="project-tech">SPRING BOOT · FLOWABLE · MYSQL</span><span class="project-date">全栈开发<br />2025/04 — 2025/12</span><span class="project-arrow">↗</span></a></article>
         </div>
         <p class="empty-state" data-empty-state hidden>没有匹配该技术的项目。</p>
       </section>
