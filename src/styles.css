@@ -17,3 +17,20 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
 .project > .project-panel{display:none}
+
+/* Quiet glass layer — inspired by Harness, tuned for a light editorial portfolio. */
+:root{--glass:rgba(255,255,255,.58);--glass-strong:rgba(255,255,255,.78);--glass-line:rgba(255,255,255,.86);--glass-shadow:0 18px 55px rgba(28,39,57,.08)}
+body{position:relative;background:radial-gradient(circle at 8% 7%,rgba(50,121,249,.15),transparent 27rem),radial-gradient(circle at 92% 27%,rgba(128,160,219,.16),transparent 31rem),linear-gradient(145deg,#f9fbfd 0%,#f1f4f8 48%,#f8fafc 100%);background-attachment:fixed}
+body:before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(67,82,105,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(67,82,105,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.72),transparent 78%)}
+body>*{position:relative;z-index:1}.site-header{border-color:rgba(255,255,255,.7);background:rgba(248,250,253,.7);box-shadow:0 8px 30px rgba(31,42,59,.035);-webkit-backdrop-filter:blur(22px) saturate(140%);backdrop-filter:blur(22px) saturate(140%)}
+.site-header.is-scrolled{border-color:rgba(201,208,218,.72);background:rgba(248,250,253,.82)}
+.profile-card,.capability{border-color:var(--glass-line);background:var(--glass);box-shadow:var(--glass-shadow),inset 0 1px 0 rgba(255,255,255,.8);-webkit-backdrop-filter:blur(18px) saturate(135%);backdrop-filter:blur(18px) saturate(135%)}
+.profile-card{background:rgba(255,255,255,.52)}.profile-info>div{border-color:rgba(190,199,211,.55)}.profile-contact button,.cap-icon{background:rgba(255,255,255,.76);box-shadow:0 10px 28px rgba(31,42,59,.07),inset 0 1px 0 #fff}
+.capability:hover{border-color:rgba(255,255,255,.96);background:rgba(255,255,255,.8);box-shadow:0 24px 62px rgba(28,39,57,.12),inset 0 1px 0 #fff}
+.filter{border-color:rgba(255,255,255,.9);background:rgba(255,255,255,.62);box-shadow:0 8px 24px rgba(31,42,59,.04);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.project-list{display:grid;gap:8px}.project,.project:last-child{overflow:hidden;border:1px solid var(--glass-line);border-radius:14px;background:var(--glass);box-shadow:0 12px 36px rgba(31,42,59,.045),inset 0 1px 0 rgba(255,255,255,.85);-webkit-backdrop-filter:blur(16px) saturate(130%);backdrop-filter:blur(16px) saturate(130%)}
+.project-trigger{background:transparent}.project-trigger:hover,.project-trigger[aria-expanded=true]{background:rgba(255,255,255,.64)}.project-arrow{border-color:rgba(170,181,196,.58);background:rgba(255,255,255,.42)}
+.timeline{display:grid;gap:8px;border-top:0}.timeline-item,.timeline-item.education{min-height:116px;margin-top:0;padding-inline:22px;border:1px solid var(--glass-line);border-radius:14px;background:rgba(255,255,255,.48);box-shadow:0 12px 36px rgba(31,42,59,.04),inset 0 1px 0 rgba(255,255,255,.82);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.statement,.capabilities,.work,.experience{border-color:rgba(185,195,208,.52)}
+.button-soft{border-color:var(--glass-line);background:rgba(255,255,255,.6);box-shadow:0 10px 28px rgba(31,42,59,.05);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+@media(max-width:650px){body:before{background-size:38px 38px}.timeline-item,.timeline-item.education{padding:22px 16px}.project-list{gap:7px}}
