@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/cormorant.woff2') format('woff2');
+  font-weight: 400 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Serif SC';
+  src: url('/fonts/noto-serif-sc.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+:root {
+  --ink: #203e32;
+  --muted: #59685e;
+  --line: #cbd2c5;
+  --paper: #fffef6;
+  --canvas: #e9eee5;
+  --accent: #748367;
+  --peach: #edc9b4;
+  --yellow: #e8e6b2;
+  --serif: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+  --display: 'Cormorant Garamond', 'Noto Serif SC', 'Songti SC', serif;
+  --sans: 'DM Sans', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --max: 1280px;
+  --gutter: clamp(20px, 5vw, 72px);
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--canvas);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+body { margin: 0; background: var(--canvas); color: var(--ink); line-height: 1.75; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button:not(:disabled) { cursor: pointer; }
+img, svg { max-width: 100%; }
+[hidden] { display: none !important; }
+::selection { background: var(--yellow); color: var(--ink); }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+.skip-link { position: fixed; top: -100px; left: 20px; z-index: 100; padding: 10px 20px; background: var(--ink); color: var(--paper); }
+.skip-link:focus { top: 15px; }
+.reveal { opacity: 1; }
+.js-motion .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.js-motion .reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; transition-delay: 0ms !important; }
+  .js-motion .reveal { opacity: 1; transform: none; }
+}
