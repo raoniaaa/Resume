@@ -38,6 +38,9 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Check pages and download links
+        run: pnpm check:site
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
