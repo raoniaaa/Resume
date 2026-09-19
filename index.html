@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f1e9de" />
+    <meta name="theme-color" content="#18181b" />
     <meta
       name="description"
       content="你好，我是冉芸侨。专注 Java、Go、Python 后端、AI Agent 与 RAG 开发，了解我的工程项目、技术实践和工作经历。"
@@ -22,440 +22,696 @@
     <meta property="og:locale" content="zh_CN" />
     <link rel="canonical" href="https://raoniaaa.github.io/Resume/" />
     <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
-    <link
-      rel="preload"
-      as="image"
-      href="%BASE_URL%images/koi-hero.webp"
-      fetchpriority="high"
-    />
     <title>冉芸侨 · 后端与 AI 应用开发者</title>
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
     <a class="skip" href="#about">跳到个人介绍</a>
+    
+    <!-- TypeSafe AI Style Minimal Floating Header -->
     <header class="site-header">
-      <a class="identity" href="#top"
-        ><span class="identity-mark" aria-hidden="true">冉</span
-        ><span>RAN YUNQIAO</span></a
-      ><button
-        class="menu-toggle"
-        type="button"
-        aria-label="打开导航菜单"
-        aria-expanded="false"
-        aria-controls="primary-navigation"
-        hidden
-      >
-        <span></span><span></span>
-      </button>
-      <nav id="primary-navigation" aria-label="页面导航">
-        <a href="#about">关于我</a><a href="#projects">项目</a
-        ><a href="#experience">经历</a><a href="#contact">联系</a>
-      </nav>
-      <a
-        class="resume-link"
-        href="%BASE_URL%冉芸侨-1年经验-Agent开发_AI应用方向-上海.pdf?v=87fcf7350030"
-        download="冉芸侨-1年经验-Agent开发_AI应用方向-上海.pdf"
-        >下载简历 ↗</a
-      >
+      <div class="header-inner wrap">
+        <a class="identity" href="#top" aria-label="回到顶部">
+          <span class="identity-mark" aria-hidden="true">冉</span>
+          <span class="identity-text">RAN YUNQIAO<small class="sys-code">// SYS.ONE</small></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="打开导航菜单"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          hidden
+        >
+          <span></span><span></span>
+        </button>
+
+        <nav id="primary-navigation" aria-label="页面导航">
+          <a href="#about">关于我</a>
+          <a href="#projects">工程项目</a>
+          <a href="#skills">常用技术</a>
+          <a href="#experience">经历</a>
+          <a href="#contact">联系</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="status-pill" title="求职状态">
+            <span class="pulse-dot"></span>
+            <span>上海 · 一周内到岗</span>
+          </div>
+          <a
+            class="resume-link btn-download"
+            href="%BASE_URL%冉芸侨-1年经验-Agent开发_AI应用方向-上海.pdf?v=87fcf7350030"
+            download="冉芸侨-1年经验-Agent开发_AI应用方向-上海.pdf"
+          >
+            下载简历 ↗
+          </a>
+        </div>
+      </div>
       <div class="reading-progress" aria-hidden="true"></div>
     </header>
+
     <main id="main">
-      <section class="opening" data-opening id="top" aria-labelledby="name">
-        <div class="opening-stage">
-          <div class="scene-image" aria-hidden="true"></div>
-          <div class="scene-wash" aria-hidden="true"></div>
-          <div class="petal-field" aria-hidden="true">
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <!-- HERO SECTION: TypeSafe AI High-Tech Retro Aesthetic -->
+      <section class="hero-section" data-opening id="top" aria-labelledby="name">
+        <!-- Background Ambient Mesh -->
+        <div class="hero-atmosphere" aria-hidden="true">
+          <div class="hero-gradient-orb"></div>
+          <div class="hero-dither-pattern"></div>
+        </div>
+
+        <!-- Left Vertical Telemetry Label -->
+        <div class="margin-telemetry" aria-hidden="true">
+          <span>RAN.AI // SYSTEM.ONE // BACKEND-AGENT-RAG // SHANGHAI 2026 // BUILD 9801af1</span>
+        </div>
+
+        <div class="wrap hero-container tech-bracket tech-bracket-bottom">
+          <!-- Retro OS News Widget -->
+          <div class="retro-news-badge" role="status">
+            <div class="news-bar">
+              <span class="news-icon">⚡</span>
+              <span class="news-date">Sept 2026 • Ran.AI News</span>
+            </div>
+            <div class="news-body">
+              <span class="news-msg">Ran Yunqiao available for Agent & Backend Roles</span>
+              <a href="#about" class="news-link">Read more [↗]</a>
+            </div>
           </div>
-          <span class="vertical-note micro" aria-hidden="true"
-            >A PERSONAL JOURNEY — SHANGHAI, 2026</span
-          >
-          <div class="opening-copy">
-            <p class="micro">你好，我是</p>
-            <h1 id="name">冉芸侨</h1>
-            <p class="name-roman">RAN YUNQIAO</p>
-            <span class="intro-rule" aria-hidden="true"></span>
-            <p class="opening-role">后端开发 · AI Agent · RAG</p>
-            <p class="opening-description">
-              以好奇心出发，把想法写成可用的系统。
+
+          <!-- Dotted Leader Monospace Subtitle -->
+          <p class="hero-leader micro">
+            RAN YUNQIAO <span class="dots">...................................................</span> AGENT & BACKEND SYSTEMS
+          </p>
+
+          <!-- Massive Architectural Title -->
+          <div class="hero-title-group">
+            <h1 class="hero-headline" id="name">
+              Building Autonomous Systems;<br />
+              Giving AI The Rigor Of Code.
+            </h1>
+            <p class="hero-chinese-intro">
+              <strong>冉芸侨 · 后端与 AI 应用开发者</strong><br />
+              以好奇心出发，把想法写成可用的生产系统。专注 Java / Go / Python、Agent 状态机、多模型接入与 RAG 检索管线。
             </p>
-            <a class="opening-scroll" href="#about"
-              >向下滚动，慢慢认识我 <span aria-hidden="true">↓</span></a
-            >
           </div>
-          <div class="opening-contact">
-            <a href="mailto:Raoniaaa@gmail.com">Raoniaaa@gmail.com</a
-            ><a href="tel:+8617551635652">175 5163 5652</a
-            ><span>上海 · 一周内可入职</span>
+
+          <!-- Hero Action CTAs -->
+          <div class="hero-cta-row">
+            <a class="hero-btn-primary" href="#projects">
+              浏览工程实践 <span class="btn-arrow">↗</span>
+            </a>
+            <a class="hero-btn-secondary" href="#contact">
+              与我联系 / 履历 <span class="btn-arrow">↓</span>
+            </a>
           </div>
-          <div class="paper-curtain" aria-hidden="true">
-            <p class="micro">FROM CURIOSITY TO CREATION</p>
-            <p>每一个想法，<br />都值得一次认真的构建。</p>
-            <span>继续向下 · 关于我</span>
+
+          <!-- Hero Contact Bar -->
+          <div class="hero-contact-strip">
+            <a href="mailto:Raoniaaa@gmail.com" class="contact-strip-item">
+              <span class="strip-label">EMAIL</span>
+              <strong>Raoniaaa@gmail.com</strong>
+            </a>
+            <span class="strip-sep" aria-hidden="true">/</span>
+            <a href="tel:+8617551635652" class="contact-strip-item">
+              <span class="strip-label">TEL</span>
+              <strong>175 5163 5652</strong>
+            </a>
+            <span class="strip-sep" aria-hidden="true">/</span>
+            <div class="contact-strip-item">
+              <span class="strip-label">LOCATION</span>
+              <strong>上海 · 一周内可入职</strong>
+            </div>
+          </div>
+
+          <!-- TypeSafe AI Benchmark & Architecture Window Component -->
+          <div class="benchmark-window" aria-label="核心工程基准与架构表现">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="win-btn win-close"></span>
+                <span class="win-btn win-min"></span>
+                <span class="win-btn win-max"></span>
+              </div>
+              <span class="window-title">System.One // Engineering Benchmarks & Architecture</span>
+              <span class="window-version">v2.6-PROD</span>
+            </div>
+
+            <div class="window-body">
+              <div class="benchmark-grid">
+                <div class="benchmark-item">
+                  <div class="benchmark-meta">
+                    <span class="model-name">GEO-Service [Ran]</span>
+                    <span class="speed-mult">100% 数据血缘</span>
+                    <span class="cost-tag">8–12 Queries</span>
+                  </div>
+                  <div class="slider-track">
+                    <div class="slider-fill" style="width: 96%;"></div>
+                    <div class="slider-thumb" style="left: 96%;"></div>
+                  </div>
+                  <p class="benchmark-caption">多租户状态机编排 · 证据约束内容生产 · 成功后结算</p>
+                </div>
+
+                <div class="benchmark-item">
+                  <div class="benchmark-meta">
+                    <span class="model-name">Cross-Platform MCP</span>
+                    <span class="speed-mult">双端调度</span>
+                    <span class="cost-tag">零状态漂移</span>
+                  </div>
+                  <div class="slider-track">
+                    <div class="slider-fill" style="width: 88%;"></div>
+                    <div class="slider-thumb" style="left: 88%;"></div>
+                  </div>
+                  <p class="benchmark-caption">浏览器自动化 + Android 真机集群协同 · Redis 租约调度</p>
+                </div>
+
+                <div class="benchmark-item">
+                  <div class="benchmark-meta">
+                    <span class="model-name">WebSearch [Reflexion]</span>
+                    <span class="speed-mult">门控校准</span>
+                    <span class="cost-tag">真实 App 拟合</span>
+                  </div>
+                  <div class="slider-track">
+                    <div class="slider-fill" style="width: 92%;"></div>
+                    <div class="slider-thumb" style="left: 92%;"></div>
+                  </div>
+                  <p class="benchmark-caption">LangGraph 多源检索 · Judge 动态门控 · 拟合评估</p>
+                </div>
+              </div>
+
+              <!-- Terminal Live Inspection Strip -->
+              <div class="terminal-inspection">
+                <div class="term-line">
+                  <span class="term-prompt">$</span>
+                  <span class="term-cmd">telemetry --status --all</span>
+                </div>
+                <div class="term-stats">
+                  <span class="badge-green">STATUS: ONLINE</span>
+                  <span class="badge-dark">COST: $0.000081</span>
+                  <span class="badge-dark">LATENCY: 0.114s</span>
+                  <span class="term-note">Shanghai, China · All Systems Operational</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- SECTION 01: MANIFESTO / ABOUT -->
       <section
-        class="manifesto wrap"
+        class="manifesto-section wrap"
         data-manifesto
         id="about"
         aria-labelledby="about-title"
       >
-        <p class="micro">01 / THE PERSON BEHIND THE CODE</p>
-        <div class="manifesto-grid">
-          <h2 id="about-title">
-            <span data-ink-line>保持好奇，</span
-            ><span data-ink-line>也认真构建。</span>
-          </h2>
-          <div class="manifesto-prose">
-            <p>
-              我是一名后端与 AI 应用开发者，<br />喜欢把复杂的问题，拆成可以一步步实现的系统。
-            </p>
-            <p>
-              我的工作从 Java 后端延伸到 Agent、RAG
-              和跨端工具。除了让功能跑起来，我也关注检索依据、任务状态、租户隔离，以及系统失败后如何恢复。
-            </p>
-            <a class="line-link" href="#projects"
-              >接下来，看看我的实践 <span>↓</span></a
-            >
+        <div class="section-frame tech-bracket tech-bracket-bottom">
+          <div class="section-badge-bar">
+            <p class="micro">01 / THE PERSON BEHIND THE CODE</p>
+            <span class="corner-indicator">// ABOUT</span>
           </div>
-        </div>
-        <div class="personal-facts">
-          <div>
-            <strong>Java / Go / Python</strong><span>主要开发语言</span>
+
+          <div class="manifesto-grid">
+            <h2 id="about-title" class="manifesto-headline">
+              <span data-ink-line>保持好奇，</span><br />
+              <span data-ink-line>也认真构建。</span>
+            </h2>
+            
+            <div class="manifesto-prose">
+              <p class="lead-prose">
+                我是一名后端与 AI 应用开发者，喜欢把复杂的问题拆成可以一步步实现的系统。
+              </p>
+              <p>
+                我的工作从 Java 后端延伸到 Agent、RAG 和跨端工具。除了让功能跑起来，我也关注检索依据、任务状态、租户隔离，以及系统失败后如何恢复。
+              </p>
+              <a class="line-link" href="#projects">
+                接下来，看看我的工程实践 <span class="arrow-symbol">↓</span>
+              </a>
+            </div>
           </div>
-          <div><strong>06</strong><span>工程项目实践</span></div>
-          <div><strong>上海</strong><span>工作城市 · 一周内可入职</span></div>
+
+          <div class="personal-facts">
+            <div class="fact-card">
+              <div class="fact-bar">LANGUAGES</div>
+              <strong>Java / Go / Python</strong>
+              <span>主要开发语言</span>
+            </div>
+            <div class="fact-card">
+              <div class="fact-bar">PORTFOLIO</div>
+              <strong>06</strong>
+              <span>工程项目实践</span>
+            </div>
+            <div class="fact-card">
+              <div class="fact-bar">STATUS</div>
+              <strong>上海</strong>
+              <span>工作城市 · 一周内可入职</span>
+            </div>
+          </div>
         </div>
       </section>
-      <div class="scene-interlude" aria-hidden="true">
-        <div></div>
-        <span>THOUGHTS BECOME SYSTEMS.</span>
-      </div>
+
+      <!-- SECTION 02: PROJECTS INTRO -->
       <section
         class="work-intro wrap"
         id="projects"
         aria-labelledby="projects-title"
       >
-        <p class="micro">02 / SELECTED WORKS</p>
-        <h2 id="projects-title">让作品，<em>继续讲述。</em></h2>
-        <p>三个近期项目，从业务问题到工程实现。</p>
+        <div class="work-intro-header">
+          <p class="micro">02 / SELECTED WORKS</p>
+          <h2 id="projects-title">让作品，<em>继续讲述。</em></h2>
+          <p class="work-intro-desc">三个近期核心项目，从真实业务问题到高可靠工程实现。</p>
+        </div>
       </section>
-      <section class="case-study case-01" data-case aria-labelledby="case-01">
-        <div class="case-inner wrap">
-          <div class="case-copy">
-            <p class="micro">01 / BRAND INTELLIGENCE</p>
-            <h3 id="case-01">GEO-Service</h3>
-            <p class="case-statement">让品牌，<br />被 AI 看见。</p>
-            <p class="case-description">
-              从品牌诊断、多模型监测，到证据内容与白标报告，组织完整的 GEO
-              业务流程。
-            </p>
-            <span class="case-tech">GO / MCP / RAG / SAAS</span
-            ><a class="line-link" href="%BASE_URL%projects/metageo/"
-              >阅读项目与架构 <span>↗</span></a
-            >
-          </div>
-          <div class="case-visual">
-            <span class="outline-number" aria-hidden="true">01</span>
-            <div class="diagram">
-              <svg
-                viewBox="0 0 520 340"
-                role="img"
-                aria-label="品牌经由多模型监测、证据汇总产生报告"
-              >
-                <g stroke="#bca594" fill="none">
-                  <path
-                    d="M112 176C185 176 150 75 243 75M112 176H243M112 176C185 176 150 277 243 277M345 75C405 75 364 176 440 176M345 176H440M345 277C405 277 364 176 440 176"
-                  />
-                </g>
-                <circle
-                  cx="80"
-                  cy="176"
-                  r="39"
-                  fill="#fcf7ef"
-                  stroke="#bea48e"
-                />
-                <text x="80" y="182" text-anchor="middle">品牌</text>
-                <g fill="#f8efe4" stroke="#cdbbaa">
-                  <rect x="224" y="51" width="130" height="48" rx="3" />
-                  <rect x="224" y="152" width="130" height="48" rx="3" />
-                  <rect x="224" y="253" width="130" height="48" rx="3" />
-                  <rect x="420" y="129" width="66" height="94" rx="4" />
-                </g>
-                <text x="289" y="80" text-anchor="middle">多模型监测</text>
-                <text x="289" y="181" text-anchor="middle">引用与提及</text>
-                <text x="289" y="282" text-anchor="middle">内容与证据</text>
-                <text x="453" y="207" text-anchor="middle">报告</text>
-                <path
-                  d="M433 181V163M452 181V150M472 181V141"
-                  stroke="#ab8b70"
-                  stroke-width="7"
-                />
-              </svg>
+
+      <!-- CASE 01: GEO-Service (TypeSafe AI Hot-Pink Signature Section) -->
+      <section class="case-study-pink" data-case aria-labelledby="case-01">
+        <div class="wrap case-pink-inner tech-bracket tech-bracket-bottom">
+          <div class="case-pink-grid">
+            <div class="case-copy">
+              <div class="case-tag-line">
+                <span class="micro dark-micro">01 / BRAND INTELLIGENCE</span>
+                <span class="badge-contrast">PRODUCTION</span>
+              </div>
+              <h3 id="case-01" class="case-title">GEO-Service</h3>
+              <p class="case-statement">让品牌，<br />被 AI 看见。</p>
+              <p class="case-description">
+                从品牌诊断、多模型监测，到证据内容与白标报告，组织完整的 GEO 业务流程。核心解决多阶段数据血缘绑定、租户隔离与断点续跑计费。
+              </p>
+              <div class="case-tech-pills">
+                <span>GO</span><span>MCP</span><span>RAG</span><span>SAAS</span><span>POSTGRESQL</span>
+              </div>
+              <div class="case-actions">
+                <a class="case-primary-link" href="%BASE_URL%projects/metageo/">
+                  阅读项目与架构 <span class="arrow-char">↗</span>
+                </a>
+              </div>
             </div>
-            <div class="visual-caption">
-              <span>核心开发 · 多租户隔离 · 工作流编排</span
-              ><time>2026/07 — 至今</time>
+
+            <div class="case-visual">
+              <div class="retro-window diagram-window">
+                <div class="window-header">
+                  <div class="window-controls">
+                    <span class="win-btn win-close"></span>
+                    <span class="win-btn win-min"></span>
+                    <span class="win-btn win-max"></span>
+                  </div>
+                  <span class="window-title">GEO-Service // Architecture & Lineage v2.6</span>
+                  <span class="window-version">01 / 06</span>
+                </div>
+                <div class="diagram-canvas">
+                  <svg
+                    viewBox="0 0 520 340"
+                    role="img"
+                    aria-label="品牌经由多模型监测、证据汇总产生报告"
+                  >
+                    <g stroke="#18181b" stroke-width="1.5" fill="none">
+                      <path d="M112 176C185 176 150 75 243 75M112 176H243M112 176C185 176 150 277 243 277M345 75C405 75 364 176 440 176M345 176H440M345 277C405 277 364 176 440 176" />
+                    </g>
+                    <circle cx="80" cy="176" r="39" fill="#ffffff" stroke="#18181b" stroke-width="2" />
+                    <text x="80" y="182" text-anchor="middle" font-family="Host Grotesk, sans-serif" font-weight="700" font-size="14" fill="#18181b">品牌</text>
+                    <g fill="#ffffff" stroke="#18181b" stroke-width="1.5">
+                      <rect x="224" y="51" width="130" height="48" rx="2" />
+                      <rect x="224" y="152" width="130" height="48" rx="2" />
+                      <rect x="224" y="253" width="130" height="48" rx="2" />
+                      <rect x="420" y="129" width="66" height="94" rx="2" />
+                    </g>
+                    <text x="289" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#18181b">多模型监测</text>
+                    <text x="289" y="181" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#18181b">引用与提及</text>
+                    <text x="289" y="282" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#18181b">内容与证据</text>
+                    <text x="453" y="207" text-anchor="middle" font-family="Host Grotesk, sans-serif" font-weight="700" font-size="13" fill="#18181b">报告</text>
+                    <path d="M433 181V163M452 181V150M472 181V141" stroke="#f386a1" stroke-width="6" />
+                  </svg>
+                </div>
+                <div class="window-status-bar">
+                  <span>核心开发 · 多租户隔离 · 工作流编排</span>
+                  <time>2026/07 — 至今</time>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="case-study case-02" data-case aria-labelledby="case-02">
-        <div class="case-inner wrap">
-          <div class="case-copy">
-            <p class="micro">02 / TOOLS & CONNECTIONS</p>
-            <h3 id="case-02">Cross-Platform<br />MCP</h3>
-            <p class="case-statement">让工具，<br />走进真实世界。</p>
-            <p class="case-description">
-              统一浏览器与 Android
-              真机的工具入口，连接设备调度、多模型接入和集群协同。
-            </p>
-            <span class="case-tech">TYPESCRIPT / .NET / REDIS</span
-            ><a class="line-link" href="%BASE_URL%projects/cross-platform-mcp/"
-              >阅读项目与架构 <span>↗</span></a
-            >
-          </div>
-          <div class="case-visual">
-            <span class="outline-number" aria-hidden="true">02</span>
-            <div class="diagram">
-              <svg
-                viewBox="0 0 520 340"
-                role="img"
-                aria-label="MCP工具入口连接浏览器与Android真机"
-              >
-                <g fill="none" stroke="#bda38f">
-                  <path d="M142 176H372M260 140V75" />
-                  <rect
-                    x="42"
-                    y="131"
-                    width="100"
-                    height="80"
-                    rx="5"
-                    fill="#fcf7ef"
-                  />
-                  <path d="M42 150H142M66 225H118" />
-                  <rect
-                    x="372"
-                    y="110"
-                    width="61"
-                    height="116"
-                    rx="8"
-                    fill="#fcf7ef"
-                  />
-                  <path d="M387 122H418M392 215H412" />
-                </g>
-                <circle
-                  cx="260"
-                  cy="176"
-                  r="46"
-                  fill="#fff9f0"
-                  stroke="#bda38f"
-                />
-                <text
-                  x="260"
-                  y="183"
-                  text-anchor="middle"
-                  class="diagram-title"
-                >
-                  MCP
-                </text>
-                <text x="260" y="60" text-anchor="middle">统一工具入口</text>
-                <text x="92" y="185" text-anchor="middle">Browser</text>
-                <text x="402" y="179" text-anchor="middle">App</text>
-                <text x="92" y="264" text-anchor="middle">浏览器自动化</text>
-                <text x="402" y="264" text-anchor="middle">Android 真机</text>
-                <text x="260" y="310" text-anchor="middle" class="diagram-note">
-                  TOOLS THAT CONNECT
-                </text>
-              </svg>
+
+      <!-- CASE 02: Cross-Platform MCP -->
+      <section class="case-study-white" data-case aria-labelledby="case-02">
+        <div class="wrap case-white-inner tech-bracket tech-bracket-bottom">
+          <div class="case-white-grid">
+            <div class="case-copy">
+              <div class="case-tag-line">
+                <p class="micro">02 / TOOLS & CONNECTIONS</p>
+                <span class="badge-subtle">STANDALONE</span>
+              </div>
+              <h3 id="case-02" class="case-title">Cross-Platform<br />MCP</h3>
+              <p class="case-statement">让工具，<br />走进真实世界。</p>
+              <p class="case-description">
+                统一浏览器与 Android 真机的工具入口，连接设备调度、多模型接入和集群协同。基于 Redis 租约锁实现零漂移设备管理。
+              </p>
+              <div class="case-tech-pills">
+                <span>TYPESCRIPT</span><span>.NET</span><span>REDIS</span><span>ADB</span><span>PUPPETEER</span>
+              </div>
+              <div class="case-actions">
+                <a class="line-link-heavy" href="%BASE_URL%projects/cross-platform-mcp/">
+                  阅读项目与架构 <span class="arrow-char">↗</span>
+                </a>
+              </div>
             </div>
-            <div class="visual-caption">
-              <span>跨端工具 · 设备调度 · 集群协同</span
-              ><time>2026/07 — 至今</time>
+
+            <div class="case-visual">
+              <div class="retro-window diagram-window">
+                <div class="window-header">
+                  <div class="window-controls">
+                    <span class="win-btn win-close"></span>
+                    <span class="win-btn win-min"></span>
+                    <span class="win-btn win-max"></span>
+                  </div>
+                  <span class="window-title">Cross-Platform MCP // Device Cluster</span>
+                  <span class="window-version">02 / 06</span>
+                </div>
+                <div class="diagram-canvas">
+                  <svg
+                    viewBox="0 0 520 340"
+                    role="img"
+                    aria-label="MCP工具入口连接浏览器与Android真机"
+                  >
+                    <g fill="none" stroke="#18181b" stroke-width="1.5">
+                      <path d="M142 176H372M260 140V75" />
+                      <rect x="42" y="131" width="100" height="80" rx="4" fill="#f4f4f5" />
+                      <path d="M42 150H142M66 225H118" />
+                      <rect x="372" y="110" width="61" height="116" rx="6" fill="#f4f4f5" />
+                      <path d="M387 122H418M392 215H412" />
+                    </g>
+                    <circle cx="260" cy="176" r="46" fill="#18181b" stroke="#18181b" stroke-width="2" />
+                    <text x="260" y="183" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#ffffff">MCP</text>
+                    <text x="260" y="60" text-anchor="middle" font-family="Host Grotesk, sans-serif" font-weight="700" font-size="13" fill="#18181b">统一工具入口</text>
+                    <text x="92" y="185" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#18181b">Browser</text>
+                    <text x="402" y="179" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#18181b">App</text>
+                    <text x="92" y="264" text-anchor="middle" font-family="Host Grotesk, sans-serif" font-size="12" fill="#52525b">浏览器自动化</text>
+                    <text x="402" y="264" text-anchor="middle" font-family="Host Grotesk, sans-serif" font-size="12" fill="#52525b">Android 真机</text>
+                    <text x="260" y="310" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#71717a">TOOLS THAT CONNECT</text>
+                  </svg>
+                </div>
+                <div class="window-status-bar">
+                  <span>跨端工具 · 设备调度 · 集群协同</span>
+                  <time>2026/07 — 至今</time>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="case-study case-03" data-case aria-labelledby="case-03">
-        <div class="case-inner wrap">
-          <div class="case-copy">
-            <p class="micro">03 / RETRIEVAL & REASONING</p>
-            <h3 id="case-03">WebSearch</h3>
-            <p class="case-statement">好的回答，<br />有据可循。</p>
-            <p class="case-description">
-              结合多源检索与真实 App
-              结果，让生成式搜索的拟合质量可评估、可校准。
-            </p>
-            <span class="case-tech">PYTHON / LANGGRAPH / RAG</span
-            ><a class="line-link" href="%BASE_URL%projects/websearch/"
-              >阅读项目与架构 <span>↗</span></a
-            >
-          </div>
-          <div class="case-visual">
-            <span class="outline-number" aria-hidden="true">03</span>
-            <div class="diagram">
-              <svg
-                viewBox="0 0 520 340"
-                role="img"
-                aria-label="动态问题经过质量门控和多源检索，与真实App结果进行对照评估"
-              >
-                <g fill="none" stroke="#bda38f">
-                  <path d="M260 57V93M260 139V179M260 225V263" />
-                  <path
-                    d="M148 116H94V202H149M372 116H426V202H371"
-                    stroke-dasharray="4 6"
-                  />
-                </g>
-                <g fill="#fcf7ef" stroke="#cdbbaa">
-                  <rect x="171" y="18" width="178" height="39" rx="3" />
-                  <rect x="148" y="94" width="224" height="45" rx="3" />
-                  <rect x="148" y="180" width="224" height="45" rx="3" />
-                  <rect
-                    x="148"
-                    y="264"
-                    width="224"
-                    height="45"
-                    rx="3"
-                    fill="#ecd8ca"
-                  />
-                </g>
-                <text x="260" y="43" text-anchor="middle">
-                  动态问题 / Query
-                </text>
-                <text x="260" y="122" text-anchor="middle">
-                  Judge / Reflexion · 质量门控
-                </text>
-                <text x="260" y="209" text-anchor="middle">
-                  LangGraph · 多源检索
-                </text>
-                <text x="260" y="293" text-anchor="middle">
-                  真实 App 对照 · 拟合评估
-                </text>
-              </svg>
+
+      <!-- CASE 03: WebSearch -->
+      <section class="case-study-white" data-case aria-labelledby="case-03">
+        <div class="wrap case-white-inner tech-bracket tech-bracket-bottom">
+          <div class="case-white-grid">
+            <div class="case-copy">
+              <div class="case-tag-line">
+                <p class="micro">03 / RETRIEVAL & REASONING</p>
+                <span class="badge-subtle">BENCHMARK</span>
+              </div>
+              <h3 id="case-03" class="case-title">WebSearch</h3>
+              <p class="case-statement">好的回答，<br />有据可循。</p>
+              <p class="case-description">
+                结合多源检索与真实 App 结果，让生成式搜索的拟合质量可评估、可校准。通过 Judge / Reflexion 反思循环把控生成质量门控。
+              </p>
+              <div class="case-tech-pills">
+                <span>PYTHON</span><span>LANGGRAPH</span><span>RAG</span><span>EVAL</span>
+              </div>
+              <div class="case-actions">
+                <a class="line-link-heavy" href="%BASE_URL%projects/websearch/">
+                  阅读项目与架构 <span class="arrow-char">↗</span>
+                </a>
+              </div>
             </div>
-            <div class="visual-caption">
-              <span>动态 Query · 多源检索 · 拟合评估</span
-              ><time>2026/07 — 至今</time>
+
+            <div class="case-visual">
+              <div class="retro-window diagram-window">
+                <div class="window-header">
+                  <div class="window-controls">
+                    <span class="win-btn win-close"></span>
+                    <span class="win-btn win-min"></span>
+                    <span class="win-btn win-max"></span>
+                  </div>
+                  <span class="window-title">WebSearch // Reflexion Quality Gate</span>
+                  <span class="window-version">03 / 06</span>
+                </div>
+                <div class="diagram-canvas">
+                  <svg
+                    viewBox="0 0 520 340"
+                    role="img"
+                    aria-label="动态问题经过质量门控和多源检索，与真实App结果进行对照评估"
+                  >
+                    <g fill="none" stroke="#18181b" stroke-width="1.5">
+                      <path d="M260 57V93M260 139V179M260 225V263" />
+                      <path d="M148 116H94V202H149M372 116H426V202H371" stroke-dasharray="4 6" />
+                    </g>
+                    <g fill="#ffffff" stroke="#18181b" stroke-width="1.5">
+                      <rect x="171" y="18" width="178" height="39" rx="2" />
+                      <rect x="148" y="94" width="224" height="45" rx="2" />
+                      <rect x="148" y="180" width="224" height="45" rx="2" />
+                      <rect x="148" y="264" width="224" height="45" rx="2" fill="#f4f4f5" />
+                    </g>
+                    <text x="260" y="43" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#18181b">动态问题 / Query</text>
+                    <text x="260" y="122" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#18181b">Judge / Reflexion · 质量门控</text>
+                    <text x="260" y="209" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#18181b">LangGraph · 多源检索</text>
+                    <text x="260" y="293" text-anchor="middle" font-family="Host Grotesk, sans-serif" font-weight="700" font-size="13" fill="#18181b">真实 App 对照 · 拟合评估</text>
+                  </svg>
+                </div>
+                <div class="window-status-bar">
+                  <span>动态 Query · 多源检索 · 拟合评估</span>
+                  <time>2026/07 — 至今</time>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- SECTION: MORE WORKS (BENTO REGISTRY) -->
       <section class="more-work wrap" aria-labelledby="more-title">
-        <p class="micro">ALSO IN MY JOURNEY</p>
-        <h2 id="more-title">还有这些实践</h2>
-        <a href="%BASE_URL%projects/stockgenie/"
-          ><span>04</span>
-          <h3>StockGenie<small>多 Agent 股票分析平台</small></h3>
-          <time>2026/03 — 至今</time><b>↗</b></a
-        ><a href="%BASE_URL%projects/medicore/"
-          ><span>05</span>
-          <h3>MediCore·智枢<small>医疗 Agent 融合平台</small></h3>
-          <time>2025/01 — 至今</time><b>↗</b></a
-        ><a href="%BASE_URL%projects/erp/"
-          ><span>06</span>
-          <h3>Enterprise ERP<small>供应链与流程平台</small></h3>
-          <time>2025/04 — 2025/12</time><b>↗</b></a
-        >
+        <div class="more-work-header">
+          <p class="micro">ALSO IN MY JOURNEY</p>
+          <h2 id="more-title" class="section-title">还有这些实践</h2>
+        </div>
+        
+        <div class="more-work-bento">
+          <a class="bento-card" href="%BASE_URL%projects/stockgenie/">
+            <div class="bento-head">
+              <span class="bento-index">04</span>
+              <time class="bento-time">2026/03 — 至今</time>
+            </div>
+            <div class="bento-body">
+              <h3 class="bento-title">StockGenie</h3>
+              <p class="bento-sub">多 Agent 股票分析与策略评估平台</p>
+            </div>
+            <div class="bento-foot">
+              <span class="bento-tag">FINTECH / MULTI-AGENT</span>
+              <span class="bento-arrow">↗</span>
+            </div>
+          </a>
+
+          <a class="bento-card" href="%BASE_URL%projects/medicore/">
+            <div class="bento-head">
+              <span class="bento-index">05</span>
+              <time class="bento-time">2025/01 — 至今</time>
+            </div>
+            <div class="bento-body">
+              <h3 class="bento-title">MediCore·智枢</h3>
+              <p class="bento-sub">医疗 Agent 融合与分级诊疗工作流</p>
+            </div>
+            <div class="bento-foot">
+              <span class="bento-tag">HEALTHCARE / WORKFLOW</span>
+              <span class="bento-arrow">↗</span>
+            </div>
+          </a>
+
+          <a class="bento-card" href="%BASE_URL%projects/erp/">
+            <div class="bento-head">
+              <span class="bento-index">06</span>
+              <time class="bento-time">2025/04 — 2025/12</time>
+            </div>
+            <div class="bento-body">
+              <h3 class="bento-title">Enterprise ERP</h3>
+              <p class="bento-sub">供应链、批次追踪与业财流程平台</p>
+            </div>
+            <div class="bento-foot">
+              <span class="bento-tag">ENTERPRISE / JAVA</span>
+              <span class="bento-arrow">↗</span>
+            </div>
+          </a>
+        </div>
       </section>
+
+      <!-- SECTION 03: TOOLKIT / SKILLS -->
       <section
         class="skills wrap section"
         id="skills"
         aria-labelledby="skills-title"
       >
-        <div class="section-heading">
-          <div>
-            <p class="micro">03 / MY TOOLKIT</p>
-            <h2 id="skills-title">常用技术</h2>
+        <div class="skills-card tech-bracket tech-bracket-bottom">
+          <div class="section-heading">
+            <div>
+              <p class="micro">03 / MY TOOLKIT</p>
+              <h2 id="skills-title">常用技术</h2>
+            </div>
+            <p class="skills-quote">工具服务于问题，<br />而不是相反。</p>
           </div>
-          <p>工具服务于问题，<br />而不是相反。</p>
-        </div>
-        <div class="skill-grid">
-          <div>
-            <h3>后端工程</h3>
-            <p>
-              Java / Python / Go / JavaScript<br />Spring Boot / WebFlux /
-              Gin<br />Node.js / Express / .NET
-            </p>
-          </div>
-          <div>
-            <h3>AI 应用</h3>
-            <p>
-              Spring AI / LangChain4j / LangGraph<br />MCP / Tool Calling /
-              RAG<br />Hybrid Search / Rerank
-            </p>
-          </div>
-          <div>
-            <h3>数据与交付</h3>
-            <p>
-              MySQL / PostgreSQL / pgvector<br />Redis / Elasticsearch /
-              RabbitMQ<br />Docker / Nginx / Git
-            </p>
+
+          <div class="skill-grid">
+            <div class="skill-module">
+              <div class="module-bar">
+                <span class="module-code">01 // BACKEND</span>
+                <span class="status-dot-green">● RUNNING</span>
+              </div>
+              <h3>后端工程</h3>
+              <p class="skill-tags">
+                Java / Python / Go / JavaScript<br />
+                Spring Boot / WebFlux / Gin<br />
+                Node.js / Express / .NET
+              </p>
+            </div>
+
+            <div class="skill-module">
+              <div class="module-bar">
+                <span class="module-code">02 // AGENT & AI</span>
+                <span class="status-dot-green">● RUNNING</span>
+              </div>
+              <h3>AI 应用</h3>
+              <p class="skill-tags">
+                Spring AI / LangChain4j / LangGraph<br />
+                MCP / Tool Calling / RAG<br />
+                Hybrid Search / Rerank
+              </p>
+            </div>
+
+            <div class="skill-module">
+              <div class="module-bar">
+                <span class="module-code">03 // INFRA</span>
+                <span class="status-dot-green">● RUNNING</span>
+              </div>
+              <h3>数据与交付</h3>
+              <p class="skill-tags">
+                MySQL / PostgreSQL / pgvector<br />
+                Redis / Elasticsearch / RabbitMQ<br />
+                Docker / Nginx / Git
+              </p>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- SECTION 04: EXPERIENCE / JOURNEY -->
       <section
         class="experience wrap section"
         id="experience"
         aria-labelledby="experience-title"
       >
-        <div class="section-side">
-          <p class="micro">04 / MY JOURNEY</p>
-          <h2 id="experience-title">工作与教育</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <time>2026/07 — 至今</time>
-            <div>
-              <h3>上海表观动力有限公司</h3>
-              <p>Agent 开发工程师</p>
-            </div>
-          </article>
-          <article>
-            <time>2025/07 — 2026/06</time>
-            <div>
-              <h3>上海经创贺联信息技术有限公司</h3>
-              <p>Java 开发（Agent 开发）</p>
-            </div>
-          </article>
-          <article>
-            <time>2022/09 — 2026/06</time>
-            <div>
-              <h3>重庆城市科技学院</h3>
-              <p>物联网工程 · 本科</p>
-            </div>
-          </article>
+        <div class="exp-card tech-bracket tech-bracket-bottom">
+          <div class="section-side">
+            <p class="micro">04 / MY JOURNEY</p>
+            <h2 id="experience-title">工作与教育</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-entry">
+              <div class="timeline-stamp">
+                <span class="timeline-dot"></span>
+                <time>2026/07 — 至今</time>
+              </div>
+              <div class="timeline-content">
+                <h3>上海表观动力有限公司</h3>
+                <p class="timeline-role">Agent 开发工程师</p>
+              </div>
+            </article>
+
+            <article class="timeline-entry">
+              <div class="timeline-stamp">
+                <span class="timeline-dot"></span>
+                <time>2025/07 — 2026/06</time>
+              </div>
+              <div class="timeline-content">
+                <h3>上海经创贺联信息技术有限公司</h3>
+                <p class="timeline-role">Java 开发（Agent 开发）</p>
+              </div>
+            </article>
+
+            <article class="timeline-entry">
+              <div class="timeline-stamp">
+                <span class="timeline-dot"></span>
+                <time>2022/09 — 2026/06</time>
+              </div>
+              <div class="timeline-content">
+                <h3>重庆城市科技学院</h3>
+                <p class="timeline-role">物联网工程 · 本科</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
+
+      <!-- SECTION 05: CONTACT (TYPESAFE GRAND FINALE) -->
       <section
         data-finale
-        class="contact"
+        class="contact-section-pink"
         id="contact"
         aria-labelledby="contact-title"
       >
-        <div class="wrap contact-inner">
-          <div>
-            <p class="micro">05 / LET’S TALK</p>
-            <h2 id="contact-title">如果方向合适，<br />我们可以聊一聊。</h2>
-            <p>欢迎交流岗位机会，也欢迎聊聊技术与项目。</p>
+        <div class="wrap contact-pink-inner tech-bracket tech-bracket-bottom">
+          <div class="contact-overline">
+            <p class="micro dark-micro">05 / LET’S TALK</p>
+            <span class="telemetry-badge">RAN.SYS // SHANGHAI // OPEN TO ROLES</span>
           </div>
-          <div class="contact-details">
-            <a href="mailto:Raoniaaa@gmail.com"
-              >Raoniaaa@gmail.com <span>↗</span></a
-            ><a href="tel:+8617551635652">175 5163 5652 <span>↗</span></a
-            ><a
-              class="contact-resume"
-              href="%BASE_URL%冉芸侨-1年经验-Agent开发_AI应用方向-上海.pdf?v=87fcf7350030"
-              download="冉芸侨-1年经验-Agent开发_AI应用方向-上海.pdf"
-              >下载最新简历 ↓</a
-            >
+
+          <!-- TypeSafe AI Signature Giant Callout -->
+          <div class="typesafe-callout">
+            <h2 class="typesafe-callout-heading">
+              Come Build With Me <span class="double-arrow">▶▶</span>
+              <a href="mailto:Raoniaaa@gmail.com" class="callout-link">Raoniaaa@gmail.com</a>
+            </h2>
+          </div>
+
+          <div class="contact-sub-row">
+            <div class="contact-sub-text">
+              <h3 id="contact-title" class="contact-chinese-title">如果方向合适，我们可以聊一聊。</h3>
+              <p>欢迎交流岗位机会，也欢迎交流 Agent 编排、模型评测与后端高可用系统。</p>
+            </div>
+            
+            <div class="contact-actions-cluster">
+              <a href="mailto:Raoniaaa@gmail.com" class="btn-action-dark">
+                Raoniaaa@gmail.com <span>↗</span>
+              </a>
+              <a href="tel:+8617551635652" class="btn-action-dark">
+                175 5163 5652 <span>↗</span>
+              </a>
+              <a
+                class="contact-resume btn-action-inverse"
+                href="%BASE_URL%冉芸侨-1年经验-Agent开发_AI应用方向-上海.pdf?v=87fcf7350030"
+                download="冉芸侨-1年经验-Agent开发_AI应用方向-上海.pdf"
+              >
+                下载最新简历 ↓
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <footer class="wrap footer">
-        <div class="footer-wordmark" aria-hidden="true">RAN YUNQIAO</div>
-        <span>© 2026 冉芸侨</span><span>保持好奇，认真构建。</span
-        ><a href="#top">回到顶部 ↑</a>
+
+      <!-- FOOTER: Giant Background Wordmark & Retro OS Status -->
+      <footer class="site-footer">
+        <div class="wrap footer-inner">
+          <div class="footer-wordmark" aria-hidden="true">RAN YUNQIAO</div>
+          
+          <div class="footer-status-bar">
+            <div class="status-left">
+              <span class="os-tag">[Ran.OS v2.6]</span>
+              <span>© 2026 冉芸侨</span>
+              <span class="sep">·</span>
+              <span>保持好奇，认真构建。</span>
+            </div>
+            <div class="status-right">
+              <span>BACKEND · AI AGENT · RAG</span>
+              <span class="sep">·</span>
+              <a href="#top" class="back-to-top">回到顶部 ↑</a>
+            </div>
+          </div>
+        </div>
       </footer>
     </main>
   </body>
