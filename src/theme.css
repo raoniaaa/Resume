@@ -1,45 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-/* TypeSafe AI Design System Tokens */
+/* ==========================================================================
+   Claude Design System — Design Tokens & Core Primitives
+   Reverse-engineered from Anthropic / Claude.com
+   ========================================================================== */
+
 :root {
-  /* Color System */
-  --canvas: #fcfcfc;
-  --canvas-pure: #ffffff;
-  --canvas-subtle: #f4f4f5;
-  --canvas-dark: #121214;
-  --canvas-pink: #f386a1;
-  --canvas-pink-tint: #fcebef;
-  --canvas-pink-dark: #e06d8a;
+  /* --- Typography Font Stacks --- */
+  --font-serif: 'Newsreader', 'Lora', Georgia, 'Songti SC', SimSun, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Typography Colors */
-  --ink: #111111;
-  --ink-secondary: #3f3f46;
-  --ink-muted: #71717a;
-  --ink-light: #a1a1aa;
-  --ink-inverse: #ffffff;
+  /* Backward Compatibility Aliases */
+  --serif: var(--font-serif);
+  --sans: var(--font-sans);
+  --grotesk: var(--font-sans);
+  --mono: var(--font-mono);
 
-  /* Technical & Retro OS Accents */
-  --terminal-bar: #18181b;
-  --terminal-body: #ffffff;
-  --terminal-border: #18181b;
-  --line: #e4e4e7;
-  --line-bold: #18181b;
-  --line-subtle: #eaeaea;
+  /* --- Claude Production Color Tokens (Light Theme: Warm Parchment) --- */
+  --color-gray-000: #ffffff;
+  --color-gray-050: #faf9f5; /* Claude signature warm paper */
+  --color-gray-100: #f5f4ed; /* Claude card/surface */
+  --color-gray-150: #f0eee6; /* Claude card hover */
+  --color-gray-200: #e8e6dc; /* Claude border subtle */
+  --color-gray-250: #dedcd1;
+  --color-gray-300: #d1cfc5; /* Claude border default */
+  --color-gray-400: #b0aea5;
+  --color-gray-500: #87867f;
+  --color-gray-600: #5e5d59;
+  --color-gray-700: #3d3d3a; /* Claude text secondary */
+  --color-gray-750: #30302e;
+  --color-gray-800: #262624;
+  --color-gray-850: #1f1e1d;
+  --color-gray-900: #1a1918;
+  --color-gray-950: #141413; /* Claude deep charcoal ink */
 
-  --accent-green: #03aa5c;
-  --accent-green-tint: #e6f7ef;
-  --accent-cyan: #09aea1;
-  --accent-magenta: #d45bb6;
-  --accent-amber: #f59e0b;
+  /* Claude Brand Accents */
+  --color-clay: #d97757;        /* Signature Claude terracotta */
+  --color-clay-hover: #c6613f;
+  --color-clay-dark: #c46849;
+  --color-clay-tint: #faebe5;
+  --color-cactus: #629987;      /* Mineral sage green */
+  --color-cactus-tint: #eaf2ee;
+  --color-sky: #4f80ad;
+  --color-sky-tint: #edf4fa;
+  --color-peach: #ebc9b7;
+  --color-peach-tint: #fbf1ec;
+  --color-plum: #7771b0;
+  --color-plum-tint: #f1f0f8;
 
-  /* Typography */
-  --grotesk: 'Host Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-  --mono: 'JetBrains Mono', 'Space Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  --sans: var(--grotesk);
+  /* Semantic Theme Mappings */
+  --canvas: var(--color-gray-050);
+  --canvas-pure: var(--color-gray-000);
+  --canvas-subtle: var(--color-gray-100);
+  --canvas-tertiary: var(--color-gray-150);
+  --canvas-dark: var(--color-gray-950);
+  --canvas-clay: var(--color-clay);
+  --canvas-clay-tint: var(--color-clay-tint);
+  --canvas-pink: var(--color-clay-tint);
+  --canvas-pink-tint: #fdf5f2;
+  --canvas-pink-dark: var(--color-clay);
+
+  --ink: var(--color-gray-950);
+  --ink-secondary: var(--color-gray-700);
+  --ink-muted: var(--color-gray-500);
+  --ink-light: var(--color-gray-400);
+  --ink-inverse: var(--color-gray-050);
+
+  --line: var(--color-gray-200);
+  --line-subtle: var(--color-gray-150);
+  --line-bold: var(--color-gray-300);
+
+  /* Accent Mappings */
+  --accent-green: var(--color-cactus);
+  --accent-green-tint: var(--color-cactus-tint);
+  --accent-cyan: var(--color-sky);
+  --accent-magenta: var(--color-clay);
+  --accent-amber: #d9822b;
+  --accent-clay: var(--color-clay);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(20, 20, 19, 0.04), 0 1px 2px rgba(20, 20, 19, 0.02);
+  --shadow-md: 0 4px 16px -2px rgba(20, 20, 19, 0.06), 0 2px 6px -1px rgba(20, 20, 19, 0.04);
+  --shadow-lg: 0 12px 32px -4px rgba(20, 20, 19, 0.08), 0 4px 12px -2px rgba(20, 20, 19, 0.04);
 
   /* Layout */
   --max: 1240px;
   --gutter: clamp(18px, 4vw, 56px);
+
+  /* Radii */
+  --br-sm: 6px;
+  --br-md: 10px;
+  --br-lg: 14px;
+  --br-xl: 20px;
+  --br-full: 9999px;
 
   /* Base Setup */
   font-family: var(--sans);
@@ -50,6 +104,43 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color-scheme: light;
+}
+
+/* ==========================================================================
+   Dark Theme (Claude Charcoal Theme: #141413 Deep Canvas)
+   ========================================================================== */
+[data-theme="dark"] {
+  --canvas: #141413;
+  --canvas-pure: #1a1918;
+  --canvas-subtle: #262624;
+  --canvas-tertiary: #30302e;
+  --canvas-dark: #faf9f5;
+  --canvas-clay: var(--color-clay);
+  --canvas-clay-tint: rgba(217, 119, 87, 0.16);
+  --canvas-pink: rgba(217, 119, 87, 0.16);
+  --canvas-pink-tint: rgba(217, 119, 87, 0.10);
+  --canvas-pink-dark: var(--color-clay);
+
+  --ink: #faf9f5;
+  --ink-secondary: #d1cfc5;
+  --ink-muted: #9c9a92;
+  --ink-light: #73726c;
+  --ink-inverse: #141413;
+
+  --line: #30302e;
+  --line-subtle: #262624;
+  --line-bold: #4d4c48;
+
+  --color-cactus-tint: rgba(98, 153, 135, 0.18);
+  --color-sky-tint: rgba(79, 128, 173, 0.18);
+  --color-peach-tint: rgba(235, 201, 183, 0.18);
+  --color-plum-tint: rgba(119, 113, 176, 0.18);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 16px -2px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.55);
+
+  color-scheme: dark;
 }
 
 * {
@@ -67,6 +158,7 @@ body {
   color: var(--ink);
   line-height: 1.6;
   overflow-x: hidden;
+  transition: background-color 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 a {
@@ -98,12 +190,12 @@ img, svg {
 }
 
 ::selection {
-  background: var(--canvas-pink);
-  color: var(--ink);
+  background: var(--color-clay);
+  color: #ffffff;
 }
 
 :focus-visible {
-  outline: 2px solid var(--ink);
+  outline: 2px solid var(--color-clay);
   outline-offset: 3px;
 }
 
@@ -119,88 +211,42 @@ img, svg {
   font-family: var(--mono);
   font-size: 13px;
   font-weight: 500;
-  border: 1px solid var(--canvas-pure);
+  border-radius: var(--br-full);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
   transition: top 0.2s ease;
 }
 .skip-link:focus, .skip:focus {
   top: 15px;
 }
 
-/* Retro Dither / Halftone dot matrix patterns */
-.dither-bg {
-  background-image: radial-gradient(var(--ink) 1px, transparent 1px);
-  background-size: 8px 8px;
-  opacity: 0.15;
+/* Claude Ambient Pattern / Texture */
+.claude-paper-texture {
+  background-image: radial-gradient(var(--line) 0.85px, transparent 0.85px);
+  background-size: 16px 16px;
+  opacity: 0.55;
 }
 
-.dither-mesh {
-  background-color: var(--canvas-subtle);
-  background-image: radial-gradient(#000000 0.75px, transparent 0.75px);
-  background-size: 6px 6px;
+[data-theme="dark"] .claude-paper-texture {
+  background-image: radial-gradient(rgba(245, 244, 237, 0.08) 0.85px, transparent 0.85px);
 }
 
-.pink-dither-mesh {
-  background-color: var(--canvas-pink);
-  background-image: radial-gradient(#18181b 0.8px, transparent 0.8px);
-  background-size: 7px 7px;
+.dither-bg, .dither-mesh, .pink-dither-mesh {
+  background-image: radial-gradient(var(--line-bold) 0.8px, transparent 0.8px);
+  background-size: 12px 12px;
+  opacity: 0.35;
 }
 
-/* Corner Crosshair Accents ┌ ┐ └ ┘ */
-.tech-bracket {
+/* Subtle editorial corner marks */
+.tech-bracket, .tech-bracket-bottom {
   position: relative;
-}
-.tech-bracket::before,
-.tech-bracket::after {
-  content: '';
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  pointer-events: none;
-  z-index: 5;
-}
-.tech-bracket::before {
-  top: 10px;
-  left: 10px;
-  border-top: 1.5px solid var(--line-bold);
-  border-left: 1.5px solid var(--line-bold);
-}
-.tech-bracket::after {
-  top: 10px;
-  right: 10px;
-  border-top: 1.5px solid var(--line-bold);
-  border-right: 1.5px solid var(--line-bold);
-}
-
-.tech-bracket-bottom {
-  position: relative;
-}
-.tech-bracket-bottom::before,
-.tech-bracket-bottom::after {
-  content: '';
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  pointer-events: none;
-  z-index: 5;
-}
-.tech-bracket-bottom::before {
-  bottom: 10px;
-  left: 10px;
-  border-bottom: 1.5px solid var(--line-bold);
-  border-left: 1.5px solid var(--line-bold);
-}
-.tech-bracket-bottom::after {
-  bottom: 10px;
-  right: 10px;
-  border-bottom: 1.5px solid var(--line-bold);
-  border-right: 1.5px solid var(--line-bold);
 }
 
 /* Monospace Tickers and Micro Tags */
 .micro {
   font-family: var(--mono);
   font-size: 11px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-muted);
 }

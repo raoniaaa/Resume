@@ -1,5 +1,17 @@
 import './project-detail.css';
 
+// Theme Synchronization (Claude Dual Mode)
+(() => {
+  const storedTheme = localStorage.getItem('claude-theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+  const theme = storedTheme || (prefersDark.matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  if (themeMeta) {
+    themeMeta.setAttribute('content', theme === 'dark' ? '#141413' : '#faf9f5');
+  }
+})();
+
 const root = document.documentElement;
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 const nav = document.querySelector('[data-case-nav]');

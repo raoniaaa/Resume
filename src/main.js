@@ -1,6 +1,51 @@
 import "./styles.css";
 
-// Mobile navigation menu toggling
+// --- Theme Management (Claude Official Dual-Mode: Warm Parchment & Deep Charcoal) ---
+(() => {
+  const root = document.documentElement;
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  const storedTheme = localStorage.getItem("claude-theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function applyTheme(theme, save = true) {
+    root.setAttribute("data-theme", theme);
+    if (themeMeta) {
+      themeMeta.setAttribute("content", theme === "dark" ? "#141413" : "#faf9f5");
+    }
+    if (save) {
+      localStorage.setItem("claude-theme", theme);
+    }
+  }
+
+  // Initial theme resolution
+  const initialTheme = storedTheme || (prefersDark.matches ? "dark" : "light");
+  applyTheme(initialTheme, false);
+
+  // Listen for system theme changes if user hasn't explicitly set preference
+  prefersDark.addEventListener("change", (e) => {
+    if (!localStorage.getItem("claude-theme")) {
+      applyTheme(e.matches ? "dark" : "light", false);
+    }
+  });
+
+  // Bind theme toggle button
+  document.addEventListener("DOMContentLoaded", bindThemeToggle);
+  bindThemeToggle();
+
+  function bindThemeToggle() {
+    const toggleBtn = document.getElementById("theme-toggle") || document.querySelector(".theme-toggle");
+    if (!toggleBtn || toggleBtn.dataset.bound) return;
+    toggleBtn.dataset.bound = "true";
+
+    toggleBtn.addEventListener("click", () => {
+      const current = root.getAttribute("data-theme") || "light";
+      const next = current === "dark" ? "light" : "dark";
+      applyTheme(next, true);
+    });
+  }
+})();
+
+// --- Mobile navigation menu toggling ---
 const menuToggle = document.querySelector(".menu-toggle");
 const menuNav = document.getElementById("primary-navigation");
 
@@ -46,7 +91,7 @@ if (menuToggle && menuNav) {
   }
 }
 
-// Scroll progress, header styling, and section spy
+// --- Scroll progress, header styling, and section spy ---
 (() => {
   const root = document.documentElement;
   const header = document.querySelector(".site-header");
@@ -62,9 +107,7 @@ if (menuToggle && menuNav) {
     })
     .filter(Boolean);
 
-  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
   const clamp = (value) => Math.min(1, Math.max(0, value));
-
   let ticking = false;
 
   function onScroll() {

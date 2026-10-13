@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#18181b" />
+    <meta name="theme-color" content="#faf9f5" />
     <meta
       name="description"
       content="你好，我是冉芸侨。专注 Java、Go、Python 后端、AI Agent 与 RAG 开发，了解我的工程项目、技术实践和工作经历。"
@@ -28,12 +28,15 @@
   <body>
     <a class="skip" href="#about">跳到个人介绍</a>
     
-    <!-- TypeSafe AI Style Minimal Floating Header -->
+    <!-- Claude Style Frosted Glass Header -->
     <header class="site-header">
       <div class="header-inner wrap">
         <a class="identity" href="#top" aria-label="回到顶部">
           <span class="identity-mark" aria-hidden="true">冉</span>
-          <span class="identity-text">RAN YUNQIAO<small class="sys-code">// SYS.ONE</small></span>
+          <span class="identity-text">
+            <strong class="identity-name">冉芸侨</strong>
+            <span class="identity-role">Ran Yunqiao</span>
+          </span>
         </a>
 
         <button
@@ -60,6 +63,32 @@
             <span class="pulse-dot"></span>
             <span>上海 · 一周内到岗</span>
           </div>
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="切换浅色与深色主题"
+            title="切换明暗模式"
+          >
+            <span class="theme-icon icon-sun" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+            <span class="theme-icon icon-moon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+          </button>
           <a
             class="resume-link btn-download"
             href="%BASE_URL%冉芸侨-1年经验-Agent开发_AI应用方向-上海.pdf?v=87fcf7350030"
@@ -73,30 +102,20 @@
     </header>
 
     <main id="main">
-      <!-- HERO SECTION: TypeSafe AI High-Tech Retro Aesthetic -->
+      <!-- HERO SECTION: Claude Editorial & Artifact Aesthetic -->
       <section class="hero-section" data-opening id="top" aria-labelledby="name">
-        <!-- Background Ambient Mesh -->
+        <!-- Background Ambient Warm Lighting -->
         <div class="hero-atmosphere" aria-hidden="true">
           <div class="hero-gradient-orb"></div>
           <div class="hero-dither-pattern"></div>
         </div>
 
-        <!-- Left Vertical Telemetry Label -->
-        <div class="margin-telemetry" aria-hidden="true">
-          <span>RAN.AI // SYSTEM.ONE // BACKEND-AGENT-RAG // SHANGHAI 2026 // BUILD 9801af1</span>
-        </div>
-
-        <div class="wrap hero-container tech-bracket tech-bracket-bottom">
-          <!-- Retro OS News Widget -->
-          <div class="retro-news-badge" role="status">
-            <div class="news-bar">
-              <span class="news-icon">⚡</span>
-              <span class="news-date">Sept 2026 • Ran.AI News</span>
-            </div>
-            <div class="news-body">
-              <span class="news-msg">Ran Yunqiao available for Agent & Backend Roles</span>
-              <a href="#about" class="news-link">Read more [↗]</a>
-            </div>
+        <div class="wrap hero-container">
+          <!-- Claude Model / Greeting Badge -->
+          <div class="claude-model-badge" role="status">
+            <span class="model-badge-icon">✦</span>
+            <span class="news-bar">Ran Yunqiao · AI Agent &amp; Backend</span>
+            <span class="news-date">Shanghai 2026</span>
           </div>
 
           <!-- Dotted Leader Monospace Subtitle -->
@@ -104,11 +123,11 @@
             RAN YUNQIAO <span class="dots">...................................................</span> AGENT & BACKEND SYSTEMS
           </p>
 
-          <!-- Massive Architectural Title -->
+          <!-- Massive Architectural Title with Newsreader Serif -->
           <div class="hero-title-group">
             <h1 class="hero-headline" id="name">
               Building Autonomous Systems;<br />
-              Giving AI The Rigor Of Code.
+              <em>Giving AI The Rigor Of Code.</em>
             </h1>
             <p class="hero-chinese-intro">
               <strong>冉芸侨 · 后端与 AI 应用开发者</strong><br />
@@ -144,7 +163,7 @@
             </div>
           </div>
 
-          <!-- TypeSafe AI Benchmark & Architecture Window Component -->
+          <!-- Claude Artifact Benchmark & Architecture Window -->
           <div class="benchmark-window" aria-label="核心工程基准与架构表现">
             <div class="window-header">
               <div class="window-controls">
@@ -152,7 +171,7 @@
                 <span class="win-btn win-min"></span>
                 <span class="win-btn win-max"></span>
               </div>
-              <span class="window-title">System.One // Engineering Benchmarks & Architecture</span>
+              <span class="window-title">Claude Artifact // Engineering Benchmarks & Architecture</span>
               <span class="window-version">v2.6-PROD</span>
             </div>
 
@@ -337,7 +356,7 @@
                     <text x="289" y="181" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#18181b">引用与提及</text>
                     <text x="289" y="282" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#18181b">内容与证据</text>
                     <text x="453" y="207" text-anchor="middle" font-family="Host Grotesk, sans-serif" font-weight="700" font-size="13" fill="#18181b">报告</text>
-                    <path d="M433 181V163M452 181V150M472 181V141" stroke="#f386a1" stroke-width="6" />
+                    <path d="M433 181V163M452 181V150M472 181V141" stroke="#d97757" stroke-width="6" />
                   </svg>
                 </div>
                 <div class="window-status-bar">
